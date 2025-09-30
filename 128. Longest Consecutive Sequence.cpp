@@ -1,3 +1,5 @@
+#include <unordered_set>
+#include <vector>
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {

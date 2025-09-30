@@ -1,3 +1,4 @@
+#include <vector>
 class Solution {
 public:
     vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval) {
@@ -7,7 +8,7 @@ public:
 
         // Add intervals that come before the newInterval without overlapping
         while (i < n && intervals[i][1] < newInterval[0]) {
-            result.push_back(intervals[i]);
+            result.push_back(intervals[i])
             i++;
         }
 
